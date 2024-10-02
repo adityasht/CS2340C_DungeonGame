@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CS2340C_Team22</string>
+    <string name="easy_button_placeholder">Easy</string>
+    <string name="medium_button_placeholder">Medium</string>
+    <string name="hard_button_placeholder">Hard</string>
+    <string name="logo_name">App Logo</string>
+    <string name="start_button_text">Start Game</string>
+    <string name="quit_button_text">Quit Game</string>
+    <string name="player_name_input_hint">Player name…</string>
+    <string name="end_screen_button">END GAME</string>
+    <string name="character_sprite_placeholder">Player Sprite</string>
+    <string name="begin_button_placeholder">Begin</string>
+    <string name="player_score_placeholder">Score: </string>
+    <string name="sprite_select_next_description">Go to next sprite</string>
+    <string name="sprite_select_prev_description">Go to previous sprite</string>
+    <string name="sprite_select_display_description">Chosen player sprite</string>
+    <string name="restart_game_button">Try Again?</string>
+    <string name="end_screen_header">Congratulations! You Win!</string>
+    <string name="leaderboard_placeholder">Leaderboard:</string>
+    <string name="leaderboard"> </string>
+    <string name="finalScore">Final Score:</string>
+    <string name="null_name_error_message">Player name cannot be null</string>
+    <string name="empty_name_error_message">Player name cannot be empty or whitespace</string>
+    <string name="invalid_name_error_message">
+        Player name is invalid (cannot be null, empty, or whitespace)
+    </string>
+    <string name="game_map_description">Game map</string>
+    <string name="upButton">↑</string>
+    <string name="leftButton">←</string>
+    <string name="rightButton">→</string>
+    <string name="downButton">↓</string>
+    <string name="attackButton">Attack!</string>
+</resources>

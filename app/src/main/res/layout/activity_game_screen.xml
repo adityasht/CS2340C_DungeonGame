@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.GameScreenActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/playerName"
+            android:layout_width="264dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/playerHealth"
+            android:layout_width="212dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+        <TextView
+            android:id="@+id/playerDifficulty"
+            android:layout_width="212dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerHealth" />
+
+        <Button
+            android:id="@+id/endButton"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:text="@string/end_screen_button"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.863"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerScore"
+            app:layout_constraintVertical_bias="0.452" />
+
+        <TextView
+            android:id="@+id/playerScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/player_score_placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerDifficulty" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="336dp"
+            android:layout_height="384dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerName">
+
+            <ImageView
+                android:id="@+id/gameMapDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/game_map_description" />
+
+            <ImageView
+                android:id="@+id/sprite"
+                android:layout_width="58dp"
+                android:layout_height="53dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/character_sprite_placeholder" />
+        </FrameLayout>
+
+<!--        <Button-->
+<!--            android:id="@+id/nextMapButton"-->
+<!--            android:layout_width="132dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="Next Map"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="16sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.263"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/playerScore"-->
+<!--            app:layout_constraintVertical_bias="0.452" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
